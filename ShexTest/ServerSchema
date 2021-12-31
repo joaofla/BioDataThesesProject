@@ -14,7 +14,7 @@
 #################################################################
 
 ###  urn:absolute:Server#hasComponent
-https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> rdf:type owl:ObjectProperty ;
+<https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> rdf:type owl:ObjectProperty ;
                                    owl:inverseOf <urn:absolute:Server#isComponentOf> ;
                                    rdfs:domain <urn:absolute:Server#Machine> ;
                                    rdfs:range <urn:absolute:Server#Component> ;
