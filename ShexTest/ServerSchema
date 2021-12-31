@@ -1,12 +1,12 @@
-@prefix : <https://github.com/joaofla/BioDataThesesProject/blob/26dc1b28829d302c8d2c699bb70875e288ac47c1/ShexTest/ServerSchema#> .
+@prefix : <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://github.com/joaofla/BioDataThesesProject/blob/26dc1b28829d302c8d2c699bb70875e288ac47c1/ShexTest/ServerSchema> .
+@base <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema> .
 
-<https://github.com/joaofla/BioDataThesesProject/blob/26dc1b28829d302c8d2c699bb70875e288ac47c1/ShexTest/ServerSchema> rdf:type owl:Ontology ;
+<https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema> rdf:type owl:Ontology ;
                                                                                                                        rdfs:comment "A ontology for testing ShEx validation" .
 
 #################################################################
@@ -31,12 +31,16 @@
 
 ###  urn:absolute:Server#hasComputePower
 <urn:absolute:Server#hasComputePower> rdf:type owl:DatatypeProperty ,
-                                               owl:FunctionalProperty .
+                                               owl:FunctionalProperty ;
+                                      rdfs:domain <urn:absolute:Server#Machine> ;
+                                      rdfs:range xsd:integer .
 
 
 ###  urn:absolute:Server#hasStorage
 <urn:absolute:Server#hasStorage> rdf:type owl:DatatypeProperty ,
-                                          owl:FunctionalProperty .
+                                          owl:FunctionalProperty ;
+                                 rdfs:domain <urn:absolute:Server#Machine> ;
+                                 rdfs:range xsd:integer .
 
 
 #################################################################
