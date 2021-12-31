@@ -1,4 +1,4 @@
-@prefix : <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/> .
+@prefix : <https://github.com/joaofla/BioDataThesesProject/blob/1b48b5635cc6a7a8b804e4494a105fc56c46eed0/ShexTest/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
