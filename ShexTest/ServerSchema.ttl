@@ -1,0 +1,182 @@
+@prefix : <urn:absolute:Server#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <urn:absolute:Server> .
+
+<urn:absolute:Server> rdf:type owl:Ontology ;
+                       rdfs:comment "A ontology for testing ShEx validation" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  urn:absolute:Server#hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isComponentOf ;
+              rdfs:domain :Machine ;
+              rdfs:range :Component ;
+              owl:propertyDisjointWith :isComponentOf .
+
+
+###  urn:absolute:Server#isComponentOf
+:isComponentOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  urn:absolute:Server#hasComputePower
+:hasComputePower rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty .
+
+
+###  urn:absolute:Server#hasStorage
+:hasStorage rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  urn:absolute:Server#Component
+:Component rdf:type owl:Class ;
+           owl:disjointWith :Machine .
+
+
+###  urn:absolute:Server#ComputeMachine
+:ComputeMachine rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Machine
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasComponent ;
+                                                             owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :Processor
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasComponent ;
+                                                             owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :HDD
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                owl:disjointWith :StorageMachine .
+
+
+###  urn:absolute:Server#HDD
+:HDD rdf:type owl:Class ;
+     rdfs:subClassOf :Component .
+
+
+###  urn:absolute:Server#HighPower
+:HighPower rdf:type owl:Class ;
+           owl:equivalentClass [ owl:intersectionOf ( :Machine
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty :hasComputePower ;
+                                                        owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                             owl:onDatatype xsd:integer ;
+                                                                             owl:withRestrictions ( [ xsd:minInclusive 50
+                                                                                                    ]
+                                                                                                  )
+                                                                           ]
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+           rdfs:subClassOf :Machine .
+
+
+###  urn:absolute:Server#HighStorage
+:HighStorage rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Machine
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasStorage ;
+                                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                               owl:onDatatype xsd:integer ;
+                                                                               owl:withRestrictions ( [ xsd:minInclusive 50
+                                                                                                      ]
+                                                                                                    )
+                                                                             ]
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Machine .
+
+
+###  urn:absolute:Server#Machine
+:Machine rdf:type owl:Class ;
+         rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasComponent ;
+                                                  owl:someValuesFrom :HDD
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasComponent ;
+                                                  owl:someValuesFrom :Processor
+                                                ]
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasComponent ;
+                                                  owl:someValuesFrom :RAM
+                                                ]
+                                              ) ;
+                           rdf:type owl:Class
+                         ] .
+
+
+###  urn:absolute:Server#Processor
+:Processor rdf:type owl:Class ;
+           rdfs:subClassOf :Component .
+
+
+###  urn:absolute:Server#RAM
+:RAM rdf:type owl:Class ;
+     rdfs:subClassOf :Component .
+
+
+###  urn:absolute:Server#StorageMachine
+:StorageMachine rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Machine
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasComponent ;
+                                                             owl:minQualifiedCardinality "24"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :HDD
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasComponent ;
+                                                             owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :Processor
+                                                           ]
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasComponent ;
+                                                             owl:maxQualifiedCardinality "60"^^xsd:nonNegativeInteger ;
+                                                             owl:onClass :HDD
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Machine .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:absolute:Server#CM1
+:CM1 rdf:type owl:NamedIndividual ,
+              :ComputeMachine ;
+     :hasComputePower 90 ;
+     :hasStorage 20 .
+
+
+###  urn:absolute:Server#SM1
+:SM1 rdf:type owl:NamedIndividual ,
+              :StorageMachine ;
+     :hasComputePower 90 ;
+     :hasStorage 90 .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
