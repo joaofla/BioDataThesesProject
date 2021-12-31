@@ -1,10 +1,10 @@
-@prefix : <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema> .
+prefix : <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#> .
+prefix owl: <http://www.w3.org/2002/07/owl#> .
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+prefix xml: <http://www.w3.org/XML/1998/namespace> .
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+base <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema> .
 
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema> rdf:type owl:Ontology ;
                                                                                                                        rdfs:comment "A ontology for testing ShEx validation" .
@@ -13,15 +13,15 @@
 #    Object Properties
 #################################################################
 
-###  urn:absolute:Server#hasComponent
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> rdf:type owl:ObjectProperty ;
-                                   owl:inverseOf <urn:absolute:Server#isComponentOf> ;
-                                   rdfs:domain <urn:absolute:Server#Machine> ;
-                                   rdfs:range <urn:absolute:Server#Component> ;
-                                   owl:propertyDisjointWith <urn:absolute:Server#isComponentOf> .
+                                   owl:inverseOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#isComponentOf> ;
+                                   rdfs:domain <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
+                                   rdfs:range <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component> ;
+                                   owl:propertyDisjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#isComponentOf> .
 
 
-###  urn:absolute:Server#isComponentOf
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#isComponentOf
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#isComponentOf> rdf:type owl:ObjectProperty .
 
 
@@ -29,17 +29,17 @@
 #    Data properties
 #################################################################
 
-###  urn:absolute:Server#hasComputePower
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComputePower
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComputePower> rdf:type owl:DatatypeProperty ,
                                                owl:FunctionalProperty ;
-                                      rdfs:domain <urn:absolute:Server#Machine> ;
+                                      rdfs:domain <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
                                       rdfs:range xsd:integer .
 
 
-###  urn:absolute:Server#hasStorage
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasStorage
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasStorage> rdf:type owl:DatatypeProperty ,
                                           owl:FunctionalProperty ;
-                                 rdfs:domain <urn:absolute:Server#Machine> ;
+                                 rdfs:domain <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
                                  rdfs:range xsd:integer .
 
 
@@ -47,52 +47,52 @@
 #    Classes
 #################################################################
 
-###  urn:absolute:Server#Component
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component> rdf:type owl:Class ;
-                                owl:disjointWith <urn:absolute:Server#ComputeMachine> ,
-                                                 <urn:absolute:Server#HighPower> ,
-                                                 <urn:absolute:Server#HighStorage> ,
-                                                 <urn:absolute:Server#Machine> ,
-                                                 <urn:absolute:Server#StorageMachine> .
+                                owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#ComputeMachine> ,
+                                                 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower> ,
+                                                 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighStorage> ,
+                                                 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ,
+                                                 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> .
 
 
-###  urn:absolute:Server#ComputeMachine
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#ComputeMachine
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#ComputeMachine> rdf:type owl:Class ;
-                                     owl:equivalentClass [ owl:intersectionOf ( <urn:absolute:Server#Machine>
+                                     owl:equivalentClass [ owl:intersectionOf ( <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine>
                                                                                 [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <urn:absolute:Server#hasComponent> ;
+                                                                                  owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
                                                                                   owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <urn:absolute:Server#Processor>
+                                                                                  owl:onClass <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor>
                                                                                 ]
                                                                                 [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <urn:absolute:Server#hasComponent> ;
+                                                                                  owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
                                                                                   owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <urn:absolute:Server#HDD>
+                                                                                  owl:onClass <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD>
                                                                                 ]
                                                                               ) ;
                                                            rdf:type owl:Class
                                                          ] ;
-                                     rdfs:subClassOf <urn:absolute:Server#Machine> ;
-                                     owl:disjointWith <urn:absolute:Server#HDD> ,
-                                                      <urn:absolute:Server#Processor> ,
-                                                      <urn:absolute:Server#RAM> ,
-                                                      <urn:absolute:Server#StorageMachine> .
+                                     rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
+                                     owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD> ,
+                                                      <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor> ,
+                                                      <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM> ,
+                                                      <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> .
 
 
-###  urn:absolute:Server#HDD
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD> rdf:type owl:Class ;
-                          rdfs:subClassOf <urn:absolute:Server#Component> ;
-                          owl:disjointWith <urn:absolute:Server#HighPower> ,
-                                           <urn:absolute:Server#HighStorage> ,
-                                           <urn:absolute:Server#Machine> ,
-                                           <urn:absolute:Server#StorageMachine> .
+                          rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component> ;
+                          owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower> ,
+                                           <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighStorage> ,
+                                           <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ,
+                                           <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> .
 
 
-###  urn:absolute:Server#HighPower
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower> rdf:type owl:Class ;
-                                owl:equivalentClass [ owl:intersectionOf ( <urn:absolute:Server#Machine>
+                                owl:equivalentClass [ owl:intersectionOf ( <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine>
                                                                            [ rdf:type owl:Restriction ;
-                                                                             owl:onProperty <urn:absolute:Server#hasComputePower> ;
+                                                                             owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComputePower> ;
                                                                              owl:someValuesFrom [ rdf:type rdfs:Datatype ;
                                                                                                   owl:onDatatype xsd:integer ;
                                                                                                   owl:withRestrictions ( [ xsd:minInclusive 50
@@ -103,16 +103,16 @@
                                                                          ) ;
                                                       rdf:type owl:Class
                                                     ] ;
-                                rdfs:subClassOf <urn:absolute:Server#Machine> ;
-                                owl:disjointWith <urn:absolute:Server#Processor> ,
-                                                 <urn:absolute:Server#RAM> .
+                                rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
+                                owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor> ,
+                                                 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM> .
 
 
-###  urn:absolute:Server#HighStorage
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighStorage
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighStorage> rdf:type owl:Class ;
-                                  owl:equivalentClass [ owl:intersectionOf ( <urn:absolute:Server#Machine>
+                                  owl:equivalentClass [ owl:intersectionOf ( <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine>
                                                                              [ rdf:type owl:Restriction ;
-                                                                               owl:onProperty <urn:absolute:Server#hasStorage> ;
+                                                                               owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasStorage> ;
                                                                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
                                                                                                     owl:onDatatype xsd:integer ;
                                                                                                     owl:withRestrictions ( [ xsd:minInclusive 50
@@ -123,89 +123,89 @@
                                                                            ) ;
                                                         rdf:type owl:Class
                                                       ] ;
-                                  rdfs:subClassOf <urn:absolute:Server#Machine> ;
-                                  owl:disjointWith <urn:absolute:Server#Processor> ,
-                                                   <urn:absolute:Server#RAM> .
+                                  rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
+                                  owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor> ,
+                                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM> .
 
 
-###  urn:absolute:Server#Machine
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> rdf:type owl:Class ;
                               rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <urn:absolute:Server#hasComponent> ;
-                                                                       owl:someValuesFrom <urn:absolute:Server#HDD>
+                                                                       owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
+                                                                       owl:someValuesFrom <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD>
                                                                      ]
                                                                      [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <urn:absolute:Server#hasComponent> ;
-                                                                       owl:someValuesFrom <urn:absolute:Server#Processor>
+                                                                       owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
+                                                                       owl:someValuesFrom <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor>
                                                                      ]
                                                                      [ rdf:type owl:Restriction ;
-                                                                       owl:onProperty <urn:absolute:Server#hasComponent> ;
-                                                                       owl:someValuesFrom <urn:absolute:Server#RAM>
+                                                                       owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
+                                                                       owl:someValuesFrom <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM>
                                                                      ]
                                                                    ) ;
                                                 rdf:type owl:Class
                                               ] ;
-                              owl:disjointWith <urn:absolute:Server#Processor> ,
-                                               <urn:absolute:Server#RAM> .
+                              owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor> ,
+                                               <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM> .
 
 
-###  urn:absolute:Server#Processor
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor> rdf:type owl:Class ;
-                                rdfs:subClassOf <urn:absolute:Server#Component> ;
-                                owl:disjointWith <urn:absolute:Server#StorageMachine> .
+                                rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component> ;
+                                owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> .
 
 
-###  urn:absolute:Server#RAM
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#RAM> rdf:type owl:Class ;
-                          rdfs:subClassOf <urn:absolute:Server#Component> ;
-                          owl:disjointWith <urn:absolute:Server#StorageMachine> .
+                          rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Component> ;
+                          owl:disjointWith <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> .
 
 
-###  urn:absolute:Server#StorageMachine
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> rdf:type owl:Class ;
-                                     owl:equivalentClass [ owl:intersectionOf ( <urn:absolute:Server#Machine>
+                                     owl:equivalentClass [ owl:intersectionOf ( <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine>
                                                                                 [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <urn:absolute:Server#hasComponent> ;
+                                                                                  owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
                                                                                   owl:minQualifiedCardinality "24"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <urn:absolute:Server#HDD>
+                                                                                  owl:onClass <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD>
                                                                                 ]
                                                                                 [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <urn:absolute:Server#hasComponent> ;
+                                                                                  owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
                                                                                   owl:maxQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <urn:absolute:Server#Processor>
+                                                                                  owl:onClass <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Processor>
                                                                                 ]
                                                                                 [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <urn:absolute:Server#hasComponent> ;
+                                                                                  owl:onProperty <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComponent> ;
                                                                                   owl:maxQualifiedCardinality "60"^^xsd:nonNegativeInteger ;
-                                                                                  owl:onClass <urn:absolute:Server#HDD>
+                                                                                  owl:onClass <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HDD>
                                                                                 ]
                                                                               ) ;
                                                            rdf:type owl:Class
                                                          ] ;
-                                     rdfs:subClassOf <urn:absolute:Server#Machine> .
+                                     rdfs:subClassOf <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> .
 
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  urn:absolute:Server#CM1
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#CM1
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#CM1> rdf:type owl:NamedIndividual ,
-                                   <urn:absolute:Server#ComputeMachine> ,
-                                   <urn:absolute:Server#HighPower> ,
-                                   <urn:absolute:Server#Machine> ;
-                          <urn:absolute:Server#hasComputePower> 90 ;
-                          <urn:absolute:Server#hasStorage> 20 .
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#ComputeMachine> ,
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower> ,
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ;
+                          <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComputePower> 90 ;
+                          <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasStorage> 20 .
 
 
-###  urn:absolute:Server#SM1
+###  https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#SM1
 <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#SM1> rdf:type owl:NamedIndividual ,
-                                   <urn:absolute:Server#HighPower> ,
-                                   <urn:absolute:Server#HighStorage> ,
-                                   <urn:absolute:Server#Machine> ,
-                                   <urn:absolute:Server#StorageMachine> ;
-                          <urn:absolute:Server#hasComputePower> 90 ;
-                          <urn:absolute:Server#hasStorage> 90 .
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighPower> ,
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#HighStorage> ,
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#Machine> ,
+                                   <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#StorageMachine> ;
+                          <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasComputePower> 90 ;
+                          <https://github.com/joaofla/BioDataThesesProject/blob/de70a9c5dd9a8cec8b8d183a1c1e537485d20a2f/ShexTest/ServerSchema#hasStorage> 90 .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
