@@ -1,1 +1,555 @@
+@prefix : <http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5> .
 
+<http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5> rdf:type owl:Ontology ;
+                                                                          owl:imports <https://w3id.org/dcso/ns/core/4.0.0> .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AlejandroReasLucero
+:AlejandroReasLucero rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#Contributor> ;
+                     <https://w3id.org/dcso/ns/core#hasContributorId> :AlejandroReasLuceroId ;
+                     <http://xmlns.com/foaf/0.1/name> "Alejandro Reas Lucero"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AlejandroReasLuceroId
+:AlejandroReasLuceroId rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/dcso/ns/core#ContributorId> ;
+                       <https://w3id.org/dcso/ns/core#identifier> "https://pt.linkedin.com/in/alejandro-reyes-lucero-52825b49?original_referer=https%3A%2F%2Fduckduckgo.com%2F"^^xsd:string ;
+                       <https://w3id.org/dcso/ns/core#identifierType> "other"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AnaMachado
+:AnaMachado rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/dcso/ns/core#Contributor> ;
+            <https://w3id.org/dcso/ns/core#hasContributorId> :AnaMachadoId ;
+            <http://xmlns.com/foaf/0.1/name> "Ana Machado"^^xsd:string ;
+            <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AnaMachadoId
+:AnaMachadoId rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#ContributorId> ;
+              <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-5722-8941"^^xsd:string ;
+              <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AnaMargaridaCardoso
+:AnaMargaridaCardoso rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#Contributor> ;
+                     <https://w3id.org/dcso/ns/core#hasContributorId> :AnaMargaridaCardosoId ;
+                     <http://xmlns.com/foaf/0.1/mbox> "margarida.cardoso@ua.pt"^^xsd:string ;
+                     <http://xmlns.com/foaf/0.1/name> "Ana Margarida Cardoso"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AnaMargaridaCardosoId
+:AnaMargaridaCardosoId rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/dcso/ns/core#ContributorId> ;
+                       <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-3380-7295"^^xsd:string ;
+                       <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AntónioPauloBaptista
+:AntónioPauloBaptista rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/dcso/ns/core#Contributor> ;
+                      <https://w3id.org/dcso/ns/core#hasContributorId> :AntónioPauloBaptistaId ;
+                      <http://xmlns.com/foaf/0.1/name> "António Paulo Baptista"^^xsd:string ;
+                      <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#AntónioPauloBaptistaId
+:AntónioPauloBaptistaId rdf:type owl:NamedIndividual ,
+                                 <https://w3id.org/dcso/ns/core#ContributorId> ;
+                        <https://w3id.org/dcso/ns/core#identifier> "https://novaresearch.unl.pt/en/persons/antónio-paulo-brás-dos-santos-baptista"^^xsd:string ;
+                        <https://w3id.org/dcso/ns/core#identifierType> "other"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ContactInd
+:ContactInd rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/dcso/ns/core#Contact> ;
+            <https://w3id.org/dcso/ns/core#hasContactId> :ContactIndId ;
+            <http://xmlns.com/foaf/0.1/mbox> "rnery@gulbenkian.pt"^^xsd:string ;
+            <http://xmlns.com/foaf/0.1/name> "Rui Vieira Nery"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ContactIndId
+:ContactIndId rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#ContactId> ;
+              <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-3033-0647"^^xsd:string ;
+              <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#CoreMetadata
+:CoreMetadata rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#Metadata> ;
+              <https://w3id.org/dcso/ns/core#hasMetadataStandardId> :CoreMetadataId ;
+              <https://w3id.org/dcso/ns/core#language> "eng"^^xsd:string ;
+              <http://purl.org/dc/terms/description> "provides a taxonomy for the collected data" .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#CoreMetadataId
+:CoreMetadataId rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#MetadataStandardId> ;
+                <https://w3id.org/dcso/ns/core#identifier> "http://metadata.emory.edu/guidelines/descriptive/core-metadata.html"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#identifierType> "url"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#CristinaFernandes
+:CristinaFernandes rdf:type owl:NamedIndividual ,
+                            <https://w3id.org/dcso/ns/core#Contributor> ;
+                   <https://w3id.org/dcso/ns/core#hasContributorId> :CristinaFernandesId ;
+                   <http://xmlns.com/foaf/0.1/mbox> "crisfernandes2@sapo.pt"^^xsd:string ;
+                   <http://xmlns.com/foaf/0.1/name> "Cristina Fernandes"^^xsd:string ;
+                   <https://w3id.org/dcso/ns/core#role> "Co-Principal Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#CristinaFernandesId
+:CristinaFernandesId rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#ContributorId> ;
+                     <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-8776-9204"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#DataColectionAndOthers
+:DataColectionAndOthers rdf:type owl:NamedIndividual ,
+                                 <https://w3id.org/dcso/ns/core#Cost> ;
+                        <https://w3id.org/dcso/ns/core#curencyCode> "EUR"^^xsd:string ;
+                        <https://w3id.org/dcso/ns/core#value> 120000 ;
+                        <http://purl.org/dc/terms/description> "Money spent on people to collect data as well as other related costs."^^xsd:string ;
+                        <http://purl.org/dc/terms/title> "Data collection"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#DianaGomesVinagre
+:DianaGomesVinagre rdf:type owl:NamedIndividual ,
+                            <https://w3id.org/dcso/ns/core#Contributor> ;
+                   <https://w3id.org/dcso/ns/core#hasContributorId> :DianaGomesVinagreId ;
+                   <http://xmlns.com/foaf/0.1/mbox> "dianavinagre@hotmail.com"^^xsd:string ;
+                   <http://xmlns.com/foaf/0.1/name> "Diana Vinagre"^^xsd:string ;
+                   <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#DianaGomesVinagreId
+:DianaGomesVinagreId rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#ContributorId> ;
+                     <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-3681-1959"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#DistributionProfmus
+:DistributionProfmus rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#Distribution> ;
+                     <https://w3id.org/dcso/ns/core#hasHost> :PROFMUSserver ;
+                     <https://w3id.org/dcso/ns/core#hasLicense> :LicenseProfmus ;
+                     <http://www.w3.org/ns/dcat#accessURL> "https://profmus.fcsh.unl.pt/ser_musico/"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#dataAccess> "open"^^xsd:string ;
+                     <http://purl.org/dc/terms/description> "better way to share information regarding musicians"^^xsd:string ;
+                     <http://purl.org/dc/terms/title> "FCSH Profmus data distribution service"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#DmpId
+:DmpId rdf:type owl:NamedIndividual ,
+                <https://w3id.org/dcso/ns/core#DMPId> ;
+       <https://w3id.org/dcso/ns/core#identifier> "https://github.com/joaofla/BioDataThesesProject/blob/cdb854af2f44c852bf7e488fac41aff1e7c36a0f/ProfmusDMP.owl"^^xsd:string ;
+       <https://w3id.org/dcso/ns/core#identifierType> "url"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#FernandoJalôto
+:FernandoJalôto rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#Contributor> ;
+                <https://w3id.org/dcso/ns/core#hasContributorId> :FernandoJalôtoId ;
+                <http://xmlns.com/foaf/0.1/mbox> "mjaloto@hotmail.com"^^xsd:string ;
+                <http://xmlns.com/foaf/0.1/name> "Fernando Jalôto"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#FernandoJalôtoId
+:FernandoJalôtoId rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/dcso/ns/core#ContributorId> ;
+                  <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0001-8213-4587"^^xsd:string ;
+                  <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#FrancescoEsposito
+:FrancescoEsposito rdf:type owl:NamedIndividual ,
+                            <https://w3id.org/dcso/ns/core#Contributor> ;
+                   <https://w3id.org/dcso/ns/core#hasContributorId> :FrancescoEspositoId ;
+                   <http://xmlns.com/foaf/0.1/name> "Francesco Esposito"^^xsd:string ;
+                   <https://w3id.org/dcso/ns/core#role> "Co-Principal Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#FrancescoEspositoId
+:FrancescoEspositoId rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#ContributorId> ;
+                     <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-9604-0132"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#FundFCTId
+:FundFCTId rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/dcso/ns/core#FunderId> ;
+           <https://w3id.org/dcso/ns/core#identifier> "http://dx.doi.org/10.13039/501100001871"^^xsd:string ;
+           <https://w3id.org/dcso/ns/core#identifierType> "fundref"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#GRPDprivacy
+:GRPDprivacy rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/dcso/ns/core#SecurityPrivacy> ;
+             <http://purl.org/dc/terms/description> "Data should comply with the GRPD, more specificly regarding the use and share of personal information." ;
+             <http://purl.org/dc/terms/title> "General data protection regulations" .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#GrantFCTId
+:GrantFCTId rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/dcso/ns/core#GrantId> ;
+            <https://w3id.org/dcso/ns/core#identifier> "PTDC/ART-PER/32624/2017"^^xsd:string ;
+            <https://w3id.org/dcso/ns/core#identifierType> "other"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#HélderBatistaSá
+:HélderBatistaSá rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/dcso/ns/core#Contributor> ;
+                 <https://w3id.org/dcso/ns/core#hasContributorId> :HélderBatistaSáId ;
+                 <http://xmlns.com/foaf/0.1/mbox> "heldersa@ua.pt"^^xsd:string ;
+                 <http://xmlns.com/foaf/0.1/name> "Hélder Batista Sá"^^xsd:string ;
+                 <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#HélderBatistaSáId
+:HélderBatistaSáId rdf:type owl:NamedIndividual ,
+                            <https://w3id.org/dcso/ns/core#ContributorId> ;
+                   <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-7891-7789"^^xsd:string ;
+                   <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#JoãoSilva
+:JoãoSilva rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/dcso/ns/core#Contributor> ;
+           <https://w3id.org/dcso/ns/core#hasContributorId> :JoãoSilvaId ;
+           <http://xmlns.com/foaf/0.1/mbox> "joaosilva92@gmail.com"^^xsd:string ;
+           <http://xmlns.com/foaf/0.1/name> "João Silva"^^xsd:string ;
+           <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#JoãoSilvaId
+:JoãoSilvaId rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/dcso/ns/core#ContributorId> ;
+             <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-4044-9190"^^xsd:string ;
+             <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#LicenseProfmus
+:LicenseProfmus rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#License> ;
+                <https://w3id.org/dcso/ns/core#licenseRef> "https://creativecommons.org/licenses/by-nc-sa/4.0/"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#startDate> "2022-05-11T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#LuísMiguelLopesdosSantos
+:LuísMiguelLopesdosSantos rdf:type owl:NamedIndividual ,
+                                   <https://w3id.org/dcso/ns/core#Contributor> ;
+                          <https://w3id.org/dcso/ns/core#hasContributorId> :LuísMiguelLopesdosSantosId ;
+                          <http://xmlns.com/foaf/0.1/name> "Luís Miguel Lopes dos Santos"^^xsd:string ;
+                          <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#LuísMiguelLopesdosSantosId
+:LuísMiguelLopesdosSantosId rdf:type owl:NamedIndividual ,
+                                     <https://w3id.org/dcso/ns/core#ContributorId> ;
+                            <https://w3id.org/dcso/ns/core#identifier> "https://pt.linkedin.com/in/luís-miguel-russo-lopes-dos-santos/en?trk=people-guest_people_search-card"^^xsd:string ;
+                            <https://w3id.org/dcso/ns/core#identifierType> "other"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#LuísaCymbron
+:LuísaCymbron rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#Contributor> ;
+              <https://w3id.org/dcso/ns/core#hasContributorId> :LuísaCymbronId ;
+              <http://xmlns.com/foaf/0.1/name> "Luísa Cymbron"^^xsd:string ;
+              <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#LuísaCymbronId
+:LuísaCymbronId rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#ContributorId> ;
+                <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-0060-4766"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ManuelDenizSilva
+:ManuelDenizSilva rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/dcso/ns/core#Contributor> ;
+                  <https://w3id.org/dcso/ns/core#hasContributorId> :ManuelDenizSilvaId ;
+                  <http://xmlns.com/foaf/0.1/mbox> "manuel_denizsilva@yahoo.fr"^^xsd:string ;
+                  <http://xmlns.com/foaf/0.1/name> "Manuel Deniz Silva"^^xsd:string ;
+                  <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ManuelDenizSilvaId
+:ManuelDenizSilvaId rdf:type owl:NamedIndividual ,
+                             <https://w3id.org/dcso/ns/core#ContributorId> ;
+                    <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-6007-6870"^^xsd:string ;
+                    <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaAlexandreLousada
+:MariaAlexandreLousada rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/dcso/ns/core#Contributor> ;
+                       <https://w3id.org/dcso/ns/core#hasContributorId> :MariaAlexandreLousadaId ;
+                       <http://xmlns.com/foaf/0.1/name> "Maria Alexandre Lousada"^^xsd:string ;
+                       <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaAlexandreLousadaId
+:MariaAlexandreLousadaId rdf:type owl:NamedIndividual ,
+                                  <https://w3id.org/dcso/ns/core#ContributorId> ;
+                         <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0001-9581-9569"^^xsd:string ;
+                         <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaJoséArtiaga
+:MariaJoséArtiaga rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/dcso/ns/core#Contributor> ;
+                  <https://w3id.org/dcso/ns/core#hasContributorId> :MariaJoséArtiagaId ;
+                  <http://xmlns.com/foaf/0.1/name> "Maria José Artiaga"^^xsd:string ;
+                  <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaJoséArtiagaId
+:MariaJoséArtiagaId rdf:type owl:NamedIndividual ,
+                             <https://w3id.org/dcso/ns/core#ContributorId> ;
+                    <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-1706-6754"^^xsd:string ;
+                    <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaJoãoAlbuquerque
+:MariaJoãoAlbuquerque rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/dcso/ns/core#Contributor> ;
+                      <https://w3id.org/dcso/ns/core#hasContributorId> :MariaJoãoAlbuquerqueId ;
+                      <http://xmlns.com/foaf/0.1/mbox> "mjdalb@gmail.com"^^xsd:string ;
+                      <http://xmlns.com/foaf/0.1/name> "Maria João Albuquerque"^^xsd:string ;
+                      <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#MariaJoãoAlbuquerqueId
+:MariaJoãoAlbuquerqueId rdf:type owl:NamedIndividual ,
+                                 <https://w3id.org/dcso/ns/core#ContributorId> ;
+                        <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-4416-7817"^^xsd:string ;
+                        <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#NunoCamarinhas
+:NunoCamarinhas rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#Contributor> ;
+                <https://w3id.org/dcso/ns/core#hasContributorId> :NunoCamarinhasId ;
+                <http://xmlns.com/foaf/0.1/name> "Nuno Camarinhas"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#NunoCamarinhasId
+:NunoCamarinhasId rdf:type owl:NamedIndividual ,
+                           <https://w3id.org/dcso/ns/core#ContributorId> ;
+                  <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-3390-7269"^^xsd:string ;
+                  <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#NunoDomingos
+:NunoDomingos rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#Contributor> ;
+              <https://w3id.org/dcso/ns/core#hasContributorId> :NunoDomingosId ;
+              <http://xmlns.com/foaf/0.1/name> "Nuno Domingos"^^xsd:string ;
+              <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#NunoDomingosId
+:NunoDomingosId rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#ContributorId> ;
+                <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-1616-6710"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#OtherCosts
+:OtherCosts rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/dcso/ns/core#Cost> ;
+            <https://w3id.org/dcso/ns/core#curencyCode> "EUR"^^xsd:string ;
+            <https://w3id.org/dcso/ns/core#value> 118000 ;
+            <http://purl.org/dc/terms/title> "Other Costs"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#PROFMUSserver
+:PROFMUSserver rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/dcso/ns/core#Host> ;
+               <https://w3id.org/dcso/ns/core#backupFrequency> "weekly"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#backupType> "disk"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#geoLocation> "PT"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#pidSystem> "other"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#storageType> "disk"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#supportVersioning> "no"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#url> "https://profmus.fcsh.unl.pt/ser_musico/"^^xsd:string ;
+               <http://purl.org/dc/terms/description> "Repository hosted by FCSH"^^xsd:string ;
+               <http://purl.org/dc/terms/title> "Main Repository"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#PedroMoreira
+:PedroMoreira rdf:type owl:NamedIndividual ,
+                       <https://w3id.org/dcso/ns/core#Contributor> ;
+              <https://w3id.org/dcso/ns/core#hasContributorId> :PedroMoreiraId ;
+              <http://xmlns.com/foaf/0.1/mbox> "pfrmoreira@gmail.com"^^xsd:string ;
+              <http://xmlns.com/foaf/0.1/name> "Pedro Moreira"^^xsd:string ;
+              <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#PedroMoreiraId
+:PedroMoreiraId rdf:type owl:NamedIndividual ,
+                         <https://w3id.org/dcso/ns/core#ContributorId> ;
+                <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-0457-9983"^^xsd:string ;
+                <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#PortugueseMusicians
+:PortugueseMusicians rdf:type owl:NamedIndividual ,
+                              <https://w3id.org/dcso/ns/core#Dataset> ;
+                     <https://w3id.org/dcso/ns/core#hasDatasetId> :PortugueseMusiciansId ;
+                     <https://w3id.org/dcso/ns/core#hasDistribution> :DistributionProfmus ;
+                     <https://w3id.org/dcso/ns/core#hasMetadata> :CoreMetadata ;
+                     <https://w3id.org/dcso/ns/core#hasSecurityPrivacy> :GRPDprivacy ;
+                     <http://www.w3.org/ns/dcat#keyword> "Profissões musicais,Trabalho Artístico,Formação dos músicos, Associativismo"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#dataQualityAssurance> "it is followed a strict convention regarding the data collection procedure as well as the way it is stored and documented in excel documents, in order to be imported into the database to be easely accesible to other researchers interested in it."^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#language> "por"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#personalData> "yes"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#preservationStatement> "Must be preserved to allow researchers to more easaly access and compare this data"^^xsd:string ;
+                     <https://w3id.org/dcso/ns/core#sensitiveData> "no"^^xsd:string ;
+                     <http://purl.org/dc/terms/description> "Data obtained from portuguese institutions"^^xsd:string ;
+                     <http://purl.org/dc/terms/title> "Musicians in Portugal from 1750 to 1985"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#PortugueseMusiciansId
+:PortugueseMusiciansId rdf:type owl:NamedIndividual ,
+                                <https://w3id.org/dcso/ns/core#DatasetId> ;
+                       <https://w3id.org/dcso/ns/core#identifier> "https://profmus.fcsh.unl.pt/ser_musico/formularios"^^xsd:string ;
+                       <https://w3id.org/dcso/ns/core#identifierType> "url"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#Profmus
+:Profmus rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/dcso/ns/core#DMP> ;
+         <https://w3id.org/dcso/ns/core#hasContact> :ContactInd ;
+         <https://w3id.org/dcso/ns/core#hasContributor> :AlejandroReasLucero ,
+                                                        :AnaMachado ,
+                                                        :AnaMargaridaCardoso ,
+                                                        :AntónioPauloBaptista ,
+                                                        :CristinaFernandes ,
+                                                        :DianaGomesVinagre ,
+                                                        :FernandoJalôto ,
+                                                        :FrancescoEsposito ,
+                                                        :HélderBatistaSá ,
+                                                        :JoãoSilva ,
+                                                        :LuísMiguelLopesdosSantos ,
+                                                        :LuísaCymbron ,
+                                                        :ManuelDenizSilva ,
+                                                        :MariaAlexandreLousada ,
+                                                        :MariaJoséArtiaga ,
+                                                        :MariaJoãoAlbuquerque ,
+                                                        :NunoCamarinhas ,
+                                                        :NunoDomingos ,
+                                                        :PedroMoreira ,
+                                                        :RuiMagnodaSilvaPinto ,
+                                                        :TiagoHora ,
+                                                        :TiagoTeixeira ;
+         <https://w3id.org/dcso/ns/core#hasCost> :DataColectionAndOthers ,
+                                                 :OtherCosts ,
+                                                 :WebSiteDev ;
+         <https://w3id.org/dcso/ns/core#hasDMPId> :DmpId ;
+         <https://w3id.org/dcso/ns/core#hasDataset> :PortugueseMusicians ;
+         <https://w3id.org/dcso/ns/core#created> "2022-04-01T17:52:00"^^xsd:dateTime ;
+         <https://w3id.org/dcso/ns/core#ethicalIssuesExist> "unknown"^^xsd:string ;
+         <https://w3id.org/dcso/ns/core#language> "eng"^^xsd:string ;
+         <https://w3id.org/dcso/ns/core#modified> "2022-04-26T18:37:00"^^xsd:dateTime ;
+         <http://purl.org/dc/terms/description> "This DMP will be sued in order to study and improve the current state of the project and improve with the objective of making the data collected more easily accessible and reusable"^^xsd:string ;
+         <http://purl.org/dc/terms/title> "DMP for the PROFMUS project on FCSH"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ProfmusFund
+:ProfmusFund rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/dcso/ns/core#Funding> ;
+             <https://w3id.org/dcso/ns/core#hasFunderId> :FundFCTId ;
+             <https://w3id.org/dcso/ns/core#hasGrantId> :GrantFCTId ;
+             <https://w3id.org/dcso/ns/core#fundingStatus> "granted"^^xsd:string ;
+             <http://purl.org/dc/terms/description> "Funding used for the research project PROFMUS"^^xsd:string ;
+             <http://purl.org/dc/terms/title> "PROFMUS Research Project Funding"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#ProfmusProj
+:ProfmusProj rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/dcso/ns/core#Project> ;
+             <https://w3id.org/dcso/ns/core#hasFunding> :ProfmusFund ;
+             <https://w3id.org/dcso/ns/core#end> "2021-09-30T00:00:00Z"^^xsd:dateTime ;
+             <https://w3id.org/dcso/ns/core#start> "2018-10-01T00:00:00Z"^^xsd:dateTime ;
+             <http://purl.org/dc/terms/description> "Reasearch project regarding the study of musicians in Portugal between 1750 and 1985"^^xsd:string ;
+             <http://purl.org/dc/terms/title> "Profmus Research project"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#RuiMagnodaSilvaPinto
+:RuiMagnodaSilvaPinto rdf:type owl:NamedIndividual ,
+                               <https://w3id.org/dcso/ns/core#Contributor> ;
+                      <https://w3id.org/dcso/ns/core#hasContributorId> :RuiMagnodaSilvaPintoId ;
+                      <http://xmlns.com/foaf/0.1/name> "Rui Magno da Silva Pinto"^^xsd:string ;
+                      <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#RuiMagnodaSilvaPintoId
+:RuiMagnodaSilvaPintoId rdf:type owl:NamedIndividual ,
+                                 <https://w3id.org/dcso/ns/core#ContributorId> ;
+                        <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0002-7713-7844"^^xsd:string ;
+                        <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#TiagoHora
+:TiagoHora rdf:type owl:NamedIndividual ,
+                    <https://w3id.org/dcso/ns/core#Contributor> ;
+           <https://w3id.org/dcso/ns/core#hasContributorId> :TiagoHoraId ;
+           <http://xmlns.com/foaf/0.1/mbox> "tiagohora@fcsh.unl.pt"^^xsd:string ;
+           <http://xmlns.com/foaf/0.1/name> "Tiago Manuel da Hora"^^xsd:string ;
+           <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#TiagoHoraId
+:TiagoHoraId rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/dcso/ns/core#ContributorId> ;
+             <https://w3id.org/dcso/ns/core#identifier> "https://orcid.org/0000-0003-3681-1959"^^xsd:string ;
+             <https://w3id.org/dcso/ns/core#identifierType> "orcid"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#TiagoTeixeira
+:TiagoTeixeira rdf:type owl:NamedIndividual ,
+                        <https://w3id.org/dcso/ns/core#Contributor> ;
+               <https://w3id.org/dcso/ns/core#hasContributorId> :TiagoTeixeiraId ;
+               <http://xmlns.com/foaf/0.1/name> "Tiago Teixeira"^^xsd:string ;
+               <https://w3id.org/dcso/ns/core#role> "Co-Investigator"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#TiagoTeixeiraId
+:TiagoTeixeiraId rdf:type owl:NamedIndividual ,
+                          <https://w3id.org/dcso/ns/core#ContributorId> ;
+                 <https://w3id.org/dcso/ns/core#identifier> "https://www.inesc-id.pt/member/21466/"^^xsd:string ;
+                 <https://w3id.org/dcso/ns/core#identifierType> "other"^^xsd:string .
+
+
+###  http://www.semanticweb.org/filip/ontologies/2022/3/untitled-ontology-5#WebSiteDev
+:WebSiteDev rdf:type owl:NamedIndividual ,
+                     <https://w3id.org/dcso/ns/core#Cost> ;
+            <https://w3id.org/dcso/ns/core#curencyCode> "EUR"^^xsd:string ;
+            <https://w3id.org/dcso/ns/core#value> 12000 ;
+            <http://purl.org/dc/terms/description> "This is the cost used to employy developers for the website and database structure."^^xsd:string ;
+            <http://purl.org/dc/terms/title> "Web Site Development Cost"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
